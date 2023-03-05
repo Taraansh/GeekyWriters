@@ -1,4 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}GeekyWriters{% endblock title %}
 {% block contactactive %}active{% endblock contactactive %}
-{% block body %}This is contact page{% endblock body %}
+{% block css %}
+<style>
+  .container{
+    min-height: 86.5vh;
+  }
+</style>
+{% endblock css %}
+{% block body %}
+<div class="container">
+This is contact page</div>
+{% endblock body %}
