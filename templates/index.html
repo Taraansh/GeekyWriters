@@ -1,4 +1,68 @@
 {% extends 'base.html' %}
 {% block title %}GeekyWriters{% endblock title %}
 {% block homeactive %}active{% endblock homeactive %}
-{% block body %}This is home page{% endblock body %}
+{% block body %}
+
+<div class="container-fluid px-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/700x250/?programming,css" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/700x250/?coding,javascript" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/700x250/?reactjs,django" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center py-2">Why choose us?</h2>
+    <div class="row my-3">
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/200x200/?programming,css" class="rounded" alt="...">
+                <div class="my-2">
+                <h5>Best Coding articles</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos a, assumenda porro expedita illum nemo veniam pariatur temporibus nam mollitia fugit fugiat, suscipit id!</p>  
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/200x200/?coding,html" class="rounded" alt="...">
+                <div class="my-2">
+                <h5>Free courses</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos a, assumenda porro expedita illum nemo veniam pariatur temporibus nam mollitia fugit fugiat, suscipit id!</p>  
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/200x200/?reactjs,nodejs" class="rounded" alt="...">
+                <div class="my-2">
+                <h5>Services</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos a, assumenda porro expedita illum nemo veniam pariatur temporibus nam mollitia fugit fugiat, suscipit id!</p>  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
