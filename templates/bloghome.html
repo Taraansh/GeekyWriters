@@ -25,15 +25,15 @@
 
   <div class="my-2">
     {% if prev %}
-    <a class="text-light" href="/blog/?page={{prev}}"></a><button class="btn btn-primary">&laquo; Previous</button></a>
+    <button class="btn btn-primary"><a class="text-light" href="/blog/?page={{prev}}">&laquo; Previous</a></button>
     {% else %}
-    <a class="text-light" href="#"></a><button class="btn btn-primary disabled">&laquo; Previous</button></a>
+    <button class="btn btn-primary disabled"><a class="text-light" href="#">&laquo; Previous</a></button>
     {% endif %}
     
     {% if nxt %}
-    <a class="text-light" href="/blog/?page={{nxt}}"></a><button class="btn btn-primary float-end">Next &raquo;</button></a>
+    <button class="btn btn-primary float-end"><a class="text-light" href="/blog/?page={{nxt}}">Next &raquo;</a></button>
     {% else %}
-    <a class="text-light" href="#"></a><button class="btn btn-primary float-end disabled">Next &raquo;</button></a>
+    <button class="btn btn-primary float-end disabled"><a class="text-light" href="#">Next &raquo;</a></button>
     {% endif %}
 </div>
 </div>
