@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function(event){
 
         tinymce.init({
           selector: '#id_content',
+          paste_data_images: true,
+          
           plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
           editimage_cors_hosts: ['picsum.photos'],
           menubar: 'file edit view insert format tools table help',
