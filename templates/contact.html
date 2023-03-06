@@ -3,12 +3,36 @@
 {% block contactactive %}active{% endblock contactactive %}
 {% block css %}
 <style>
-  .container{
-    min-height: 86.5vh;
+  .container {
+    min-height: 85.4vh;
   }
 </style>
 {% endblock css %}
 {% block body %}
-<div class="container">
-This is contact page</div>
+<div class="container mt-2">
+  <form action="/contact/" method="POST" >
+      {% csrf_token %}
+  <h2 class="text-center my-2">Contact Me</h2>
+  <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+    </div>
+
+  <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
+  
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number">
+    </div>
+
+    <div class="mb-3">
+      <label for="desc" class="form-label">Enter Your Message</label>
+      <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 {% endblock body %}
