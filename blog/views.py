@@ -25,13 +25,13 @@ def blog(request):
     else:
         prev = None
     
-    if page <= math.ceil(length/no_of_posts):
+    if page < math.ceil(length/no_of_posts):
         nxt = page + 1
     else:
         nxt = None
     print(prev, nxt)
 
-    context = {'blogs': blogs, 'prev': prev, 'next': nxt}
+    context = {'blogs': blogs, 'prev': prev, 'nxt': nxt}
     return render(request, 'bloghome.html', context)
 
 
